@@ -23,11 +23,12 @@
         app:layout_constraintVertical_bias="0.074" />
 
     <Button
-        android:id="@+id/contador"
+        android:id="@+id/boton_contador"
         android:layout_width="389dp"
         android:layout_height="69dp"
         android:backgroundTint="#000000"
         android:text="Iniciar Conteo"
+        android:onClick="iniciarCuenta"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,5 +36,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.342" />
+
+    <TextView
+        android:id="@+id/cuenta_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="104"
+        android:textColor="#EAE7E7"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
