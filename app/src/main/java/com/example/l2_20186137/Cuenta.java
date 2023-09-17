@@ -5,6 +5,9 @@ import android.os.Handler;
 import android.os.Message;
 
 public class Cuenta {
+    private int tiempodeEspera=10000; // 10seg
+    private final int tiempomin=1000; //1seg
+
     ContadorEvent c_change_listen;
     public static Thread o_thread;
     public Cuenta() {
@@ -20,6 +23,9 @@ public class Cuenta {
                     Message msg = Message.obtain();
                     msg.obj = i;
                     mHandler.sendMessage(msg);
+                    //if(tiempodeEspera>tiempomin){
+                        //tiempodeEspera-=1000;
+                    //}
                 }
             }
         });
